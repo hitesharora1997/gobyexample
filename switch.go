@@ -35,6 +35,15 @@ func main() {
 	whatAmI := func(i interface{}) {
 		switch t := i.(type) {
 		case bool :
-			f.Println("")
-
+			f.Println("im am bool")
+		case int :
+			f.Println("im am int")
+			default :
+			f.Printf("dont know what i am %s\n",t)
+		}
 }
+whatAmI(true)
+whatAmI(1)
+whatAmI("heyy")
+}
+
